@@ -1,4 +1,8 @@
 <resources>
     <string name="app_name">food_api_room</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="loveEat">Любимая еда</string>
+    <string name="home">Главная</string>
+    <string name="popular_item">Популярная еда</string>
+    <string name="tv_categories">Категории</string>
 </resources>
