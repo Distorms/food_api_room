@@ -11,6 +11,8 @@ import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
 
+
+//ViewModel_not_work
 class HomeViewModel(): ViewModel() {
     private var randomMealLiveData = MutableLiveData<Meal>()
      //проверка
@@ -29,6 +31,7 @@ class HomeViewModel(): ViewModel() {
             }
         })
     }
+    //ViewModel_not_work
     fun observerRandomMealLivedata():LiveData<Meal>{
         return randomMealLiveData
     }

@@ -17,12 +17,13 @@ import com.example.food_api_room.viewModel.HomeViewModel
 
 
 class HomeFragment : Fragment() {
+    //ViewModel_not_work
     private lateinit var binding: FragmentHomeBinding
     private lateinit var homeMvvm: HomeViewModel
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
+            //ViewModel_not_work
         homeMvvm = ViewModelProviders.of(this)[HomeViewModel::class.java]
 
     }
@@ -33,12 +34,13 @@ class HomeFragment : Fragment() {
         binding = FragmentHomeBinding.inflate(inflater,container, false)
         return binding.root
     }
-
+    //ViewModel_not_work
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         homeMvvm.getRandomMeal()
         observerRandomMeal()
     }
+    //ViewModel_not_work
     private fun observerRandomMeal(){
         homeMvvm.observerRandomMealLivedata().observe(viewLifecycleOwner, object : Observer<Meal>{
             override fun onChanged(t: Meal?) {
