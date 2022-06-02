@@ -81,7 +81,7 @@
 
                 <TextView
                     android:id="@+id/tv_area"
-                    android:layout_width="wrap_content"
+                    android:layout_width="237dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:drawableLeft="@drawable/location_24"
@@ -111,6 +111,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="@dimen/_10sdp"
                 android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
                 android:textColor="@color/black"
                 app:layout_constraintStart_toStartOf="@id/tv_insructions"
                 app:layout_constraintTop_toBottomOf="@id/tv_insructions"
