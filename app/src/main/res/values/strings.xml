@@ -7,4 +7,5 @@
     <string name="tv_categories">Категории</string>
     <string name="nameMeal">Имя блюда</string>
     <string name="categoryName">Имя категории</string>
+    <string name="text_item">text_item</string>
 </resources>

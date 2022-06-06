@@ -1,6 +1,7 @@
 package com.example.food_api_room.retrofit
 
 import com.example.food_api_room.DAO.CategoryList
+import com.example.food_api_room.DAO.Meal
 import com.example.food_api_room.DAO.MealsByCategory
 import com.example.food_api_room.DAO.MealList
 import retrofit2.Call
@@ -22,5 +23,8 @@ interface FoodApi {
 
     @GET("categories.php")
     fun getCategories(): Call<CategoryList>
+
+    @GET ("filter.php")
+    fun getMealsByCategory(@Query("c")categoryName: String) : Call<MealsByCategory>
 
 }

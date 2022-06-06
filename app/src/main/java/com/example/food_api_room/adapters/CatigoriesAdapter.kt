@@ -12,6 +12,7 @@ import com.example.food_api_room.databinding.CategoryItemBinding
 class CategoriesAdapter():RecyclerView.Adapter<CategoriesAdapter.CategoryViewHolder>(){
 
     private var categoryList = ArrayList<Category>(0)
+    var onItemClick: ((Category) -> Unit)? = null
 
     fun setCategoryList(categoryList: ArrayList<Category>){
         this.categoryList = categoryList as ArrayList<Category>
@@ -29,6 +30,10 @@ class CategoriesAdapter():RecyclerView.Adapter<CategoriesAdapter.CategoryViewHol
             .load(categoryList[position].strCategoryThumb)
             .into(holder.binding.imgCategory)
         holder.binding.tvCategoryName.text = categoryList[position].strCategory
+
+        holder.itemView.setOnClickListener {
+            onItemClick!!.invoke(categoryList[position])
+        }
     }
 
     override fun getItemCount(): Int {
