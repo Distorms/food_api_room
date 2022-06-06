@@ -91,7 +91,7 @@ class HomeFragment : Fragment() {
                 categoriesAdapter.setCategoryList(categories as ArrayList<Category>) //add
         })
     }
-
+    //commit
     private fun onPopularItemClick() {
         popularItemsAdapter.onItemClick = { meal ->
             val intent = Intent(activity, MealActivity::class.java)
