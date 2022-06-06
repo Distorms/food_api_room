@@ -88,7 +88,7 @@ class HomeFragment : Fragment() {
 
     private fun observeCategoriesLiveData() {
         homeMvvm.observeCatigoresLiveData().observe(viewLifecycleOwner, Observer { categories ->
-                categoriesAdapter.setCategoryList(categories as ArrayList<Category>)
+                categoriesAdapter.setCategoryList(categories as ArrayList<Category>) //add
         })
     }
 
