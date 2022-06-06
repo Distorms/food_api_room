@@ -6,4 +6,5 @@
     <string name="popular_item">Популярная еда</string>
     <string name="tv_categories">Категории</string>
     <string name="nameMeal">Имя блюда</string>
+    <string name="categoryName">Имя категории</string>
 </resources>
